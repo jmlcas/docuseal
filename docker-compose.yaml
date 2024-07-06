@@ -12,7 +12,7 @@ services:
     volumes:
       - ./data:/data
     environment:
-#      - FORCE_SSL=${HOST}
+#      - FORCE_SSL="true"
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/docuseal
 
   postgres:
